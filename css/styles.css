@@ -1,0 +1,52 @@
+/* body {
+	font-size: 0; удалить пробелы - у родителя обнуляем
+}
+
+div, span {
+	border: 1px solid #000;
+	font-size: 14px; удалить пробелы - потомку добавяем
+} */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&subset=cyrillic');
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.tabs {
+	border: 1px solid #660204; /* D3DEE0 */
+	display: inline-block;
+	padding: 0;
+	border-radius: 3px;
+	font-size: 0px;
+}
+
+.tabs li {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.tabs li a {
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #667a80;
+	border: 1px solid transparent; /* прозрачный цвет */
+	margin: -1px;
+	border-radius: 3px;
+}
+
+.tabs li:hover a, 
+.tabs .now-active a {
+	color: #5AAAD3;
+	border: 1px solid #2a80ae;
+}
+
+.tabs li:not(:first-of-type):not(last-of-type) a {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.tabs li:active a {
+	color: #fff;
+	background-color: #2a80ae;
+}
